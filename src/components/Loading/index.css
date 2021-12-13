@@ -6,14 +6,22 @@
   justify-content: center;
   background-color: var(--bg-color);
 }
+.loading h1 {
+  position: absolute;
+  top: 30px;
+  color: var(--color-s);
+  animation: animation-jump 1s linear infinite;
+}
+
 .loading__square {
+  position: absolute;
   width: 100px;
   height: 100px;
-  background-color: rgb(17, 107, 167);
+  background-color: var(--color-p);
   border-radius: 5px;
   border: 1px solid rgb(40, 147, 218);
   box-shadow: 0 0 10px rgb(21, 72, 105);
-  animation: animation-loading 3s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+  animation: animation-loading 3s ease infinite;
 }
 @keyframes animation-loading {
   0% {
@@ -30,5 +38,24 @@
     box-shadow: 0 0 10px rgb(21, 72, 105);
     transform: rotate(-720deg);
     border-radius: 5px;
+  }
+}
+
+@keyframes animation-jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+
+  }
+  100% {
+    transform: translateY(0);
   }
 }

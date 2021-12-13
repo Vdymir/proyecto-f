@@ -1,10 +1,10 @@
-import React from 'react'
+import Header from '../../components/Layout/Header'
 
 const Home = () => {
     return (
-        <div>
-            <h1>HOME PAGdsssssssE</h1>
-        </div>
+        <>
+            <Header />
+        </>
     )
 }
 
