@@ -1,0 +1,34 @@
+.loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+}
+.loading__square {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(17, 107, 167);
+  border-radius: 5px;
+  border: 1px solid rgb(40, 147, 218);
+  box-shadow: 0 0 10px rgb(21, 72, 105);
+  animation: animation-loading 3s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+}
+@keyframes animation-loading {
+  0% {
+    box-shadow: 0 0 10px rgb(21, 72, 105);
+    border-radius: 5px;
+  }
+  50% {
+    box-shadow: 0 0 10px rgb(21, 72, 105), 0 0 30px rgb(34, 101, 146),
+      0 0 500px rgb(41, 105, 148);
+    transform: rotate(720deg);
+    border-radius: 50%;
+  }
+  100% {
+    box-shadow: 0 0 10px rgb(21, 72, 105);
+    transform: rotate(-720deg);
+    border-radius: 5px;
+  }
+}
