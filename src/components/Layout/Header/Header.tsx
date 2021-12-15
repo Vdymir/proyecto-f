@@ -1,12 +1,12 @@
-import { Link } from 'react-router-dom';
 import { URL_GITHUB } from '../../../constants';
+import Arrow from '../../ui/Arrow';
 import Navbar from '../Navbar';
 import './index.css';
 
 const Header = () => {
 
     const handleClick = () => window.open(URL_GITHUB)
-    
+
     return (
         <header className='header'>
             <Navbar />
@@ -20,6 +20,7 @@ const Header = () => {
                     <p>By: <span onClick={handleClick} >Vdymir.</span></p>
                 </div>
             </div>
+            <Arrow />
         </header>
     )
 }

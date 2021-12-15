@@ -1,0 +1,12 @@
+.home {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    max-width: 1400px;
+    overflow-x: hidden;
+}
+
+.home__bootstrap {
+    height: 600px;
+    width: 100%;
+}

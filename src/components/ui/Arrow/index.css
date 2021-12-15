@@ -1,0 +1,19 @@
+.arrow {
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid var(--color-s);
+    border-left: 2px solid var(--color-s);
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 30px;
+    animation: jump .5s infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes jump {
+    to {
+        bottom: 30px;
+    } from {
+        bottom: 40px;
+    }
+}
