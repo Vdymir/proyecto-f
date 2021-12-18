@@ -1,10 +1,13 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import './index.css'
 
+interface Props {
+    id: string
+}
 
-const Arrow = () => {
+const Arrow = ({id}: Props) => {
     return (
-        <Link to='section-bootstrap'smooth duration={600} spy>
+        <Link to={id} smooth duration={600} spy>
             <div className='arrow' />
         </Link>
     )

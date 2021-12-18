@@ -20,7 +20,7 @@ const Header = () => {
                     <p>By: <span onClick={handleClick} >Vdymir.</span></p>
                 </div>
             </div>
-            <Arrow />
+            <Arrow id='section-bootstrap'/>
         </header>
     )
 }
