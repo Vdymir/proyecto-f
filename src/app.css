@@ -26,7 +26,7 @@ code {
 }
 
 *::-webkit-scrollbar-track {
-  background: #e1e1e1;
+  background: #444444;
 }
 
 *::-webkit-scrollbar-thumb {

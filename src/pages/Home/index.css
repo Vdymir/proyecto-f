@@ -6,7 +6,8 @@
     overflow-x: hidden;
 }
 
-.home__bootstrap {
+.home__sections {
     height: 600px;
     width: 100%;
+    max-width: 1400px;
 }

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll';
 import './index.css';
 
 const Navbar = () => {
@@ -11,17 +11,18 @@ const Navbar = () => {
                 <div className="navBar__container-enlaces">
                     <ul>
                         <li>
-                            <Link to='booststrap'>
-                                Booststrap
+                            <Link to='section-bootstrap' smooth duration={600} spy>
+                                Bootstrap
                             </Link>
+
                         </li>
                         <li>
-                            <Link to='materia_ui'>
+                            <Link to='section-materialUi' smooth duration={600} spy>
                                 Materia UI
                             </Link>
                         </li>
                         <li>
-                            <Link to='tailwind'>
+                            <Link to='section-tailwind' smooth duration={600} spy>
                                 Tailwind
                             </Link>
                         </li>
