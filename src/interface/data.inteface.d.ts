@@ -1,17 +1,6 @@
-export interface IData {
-    id: string;
-    info: Info;
-}
-
-export interface Info {
-    frameworks: string;
-    data: IProject[];
-}
-
-export interface IProject {
-    id: number;
-    link: string;
-    img: string;
+ export interface IProject {
+     section: 'section-bootstrap' | 'section-materialUi' | 'section-tailwind'
+    url_img: string;
     title: string;
-    description: string;
+    title_color: 'bootstrap' | 'material-ui' | 'tailwind';
 }

@@ -1,47 +1,22 @@
-import { IData } from "../interface/data.inteface";
+import { IProject } from "../interface/data.inteface";
 
-export const DATA: IData[] = [
+export const DATA: IProject[] = [
     {
-        id: 'section-bootstrap',
-        info: {
-            frameworks: 'bootstrap',
-            data: [
-                {
-                    id: 1,
-                    link: '',
-                    img: '',
-                    title: '',
-                    description: '',
-                }
-            ]
-        }
+        title: 'Proyectos con bootstrap',
+        title_color: 'bootstrap',
+        url_img: '',
+        section: 'section-bootstrap'
     },
     {
-        id: 'section-materialUi',
-        info: {
-            frameworks: 'material-ui',
-            data :[
-                {
-                    id: 1,
-                    link: '',
-                    img: '',
-                    title: '',
-                    description: '',
-                }
-            ]}
+        title: 'Proyectos con material-ui',
+        title_color: 'material-ui',
+        url_img: '',
+        section: 'section-materialUi'
     },
     {
-        id: 'section-tailwind',
-        info: {
-            frameworks: 'tailwind',
-            data: [
-                {
-                    id: 1,
-                    link: '',
-                    img: '',
-                    title: '',
-                    description: '',
-                }
-            ]}
-    },
+        title: 'Proyectos con tailwind',
+        title_color: 'tailwind',
+        url_img: '',
+        section: 'section-tailwind'
+    }
 ]

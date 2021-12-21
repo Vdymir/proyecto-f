@@ -1,29 +1,21 @@
-import { Info } from '../../../interface/data.inteface'
+import { IProject } from '../../../interface/data.inteface'
+import './index.css'
 
-interface Props {
-    datos: Info;
-}
 
-const Section = ({ datos }: Props) => {
 
-    const { frameworks, data } = datos
-
+const Section = ({ url_img, title, title_color, section }: IProject) => {
     return (
-        <article className="section">
-            <div className="section-text">
-                <h3>{frameworks}</h3>
-            </div>
-            {
-                data.map(item => (
-                    <div className="section-carousel" onClick={() => window.open(item.link)}>
-                        <img src={item.img} alt={item.title} />
-                        <footer className="section-carousel-footer">
-                            <p>{item.description}</p>
-                        </footer>
+        <section className="section" id={section}>
+            <article className="section__article">
+                <div className={`section__article-title title-color-${title_color}`}>
+                    <h3>{title}</h3>
+                </div>
+                <div className="section__article-img">
+                    <div className="section__img-container">
                     </div>
-                ))
-            }
-        </article>
+                </div>
+            </article>
+        </section>
     )
 }
 

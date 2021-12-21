@@ -58,6 +58,7 @@
     padding: 10px;
     border-radius: 86% 14% 88% 12% / 12% 87% 13% 88%;
     transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
 }
 
 .navBar__container-enlaces ul li a {
@@ -69,21 +70,22 @@
 }
 
 .navBar__container-enlaces ul li:hover {
+
     transform: scale(1.2);
     transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .navBar__container-enlaces ul li:nth-child(1):hover {
-    border: 1px solid #7952B3;
+    border: 1px solid var(--color-btrap);
     transition: all .3s ease;
     box-shadow: 0 0 10px #9868e06e;
 }
 .navBar__container-enlaces ul li:nth-child(2):hover {
-    border: 1px solid #007CF8;
+    border: 1px solid var(--color-mUi);
     transition: all .3s ease;
     box-shadow: 0 0 10px #017cf66e;
 }
 .navBar__container-enlaces ul li:nth-child(3):hover {
-    border: 1px solid #51BEEF;
+    border: 1px solid var(--color-twind);
     transition: all .3s ease;
     box-shadow: 0 0 10px #51BEEF6e;
 }
