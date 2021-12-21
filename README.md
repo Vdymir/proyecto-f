@@ -1,6 +1,6 @@
 # Proyecto F
 
-_Proyecto F nace de la necesidad de aprender framework para css en este proyecto habran varios mini proyecto los cuales estaran estilados con inicialmente con bootstrap, material-ui y tailwind css_
+Proyecto F nace de la necesidad de aprender framework para css en este proyecto habran varios mini proyecto los cuales estaran estilados con inicialmente con bootstrap, material-ui y tailwind css
 
 ### Instalación 🔧
 
@@ -41,13 +41,6 @@ o
 ```
 npm run build
 ```
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
 
 ## Construido con 🛠️
 
@@ -56,5 +49,3 @@ _Este proyecto esta construido con las siguiente herramientas:_
 * React
 * TypeScript
 * react-router-dom v6
-
-
