@@ -1,7 +1,7 @@
 import './index.css'
 import Header from '../../components/Layout/Header'
-import Section from '../../components/Layout/Section'
 import { DATA } from '../../data/data'
+import { Section } from './components'
 
 
 const Home = () => {

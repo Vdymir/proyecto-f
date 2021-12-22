@@ -1,0 +1,143 @@
+.section {
+  width: 100%;
+  max-width: 1400px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section__article {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+}
+.section__article-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section__article-title h3 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #16191f, #1a1e24);
+  box-shadow: 7px 7px 14px #13161b, -7px -7px 14px #1d2229;
+  overflow: hidden;
+  position: relative;
+}
+.section__article-title h3::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #181c22;
+  position: absolute;
+  border-left: 1px solid var(--color-p);
+  top: 1px;
+  animation: write 3s infinite alternate steps(20);
+}
+
+.title-color-bootstrap {
+  color: var(--color-btrap);
+}
+.title-color-material-ui {
+  color: var(--color-mUi);
+}
+.title-color-tailwind {
+  color: var(--color-twind);
+}
+
+.section__article-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__img-container {
+  width: 350px;
+  height: 350px;
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__img-container::before {
+  content: "";
+  background: conic-gradient(
+    from 90deg at 50% 50%,
+    var(--color-p),
+    transparent,
+    transparent,
+    transparent
+  );
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  animation: rotate 2s linear infinite;
+}
+
+.section__img-container::after {
+  content: "";
+  width: 340px;
+  height: 340px;
+  background-color: #101010;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 16px 14px 20px #0000008c;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes write {
+  0% {
+    border-left: 1px solid var(--color-p);
+    transform: translateX(0);
+  }
+  5%,
+  15%,
+  25%,
+  35%,
+  45%,
+  55%,
+  65%,
+  75%,
+  85%,
+  95% {
+    border-left: none;
+  }
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90% {
+    border-left: 1px solid var(--color-p);
+  }
+  95%, 100% {
+    transform: translateX(100%);
+  }
+}

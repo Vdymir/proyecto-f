@@ -1,4 +1,4 @@
-import { IProject } from '../../../interface/data.inteface'
+import { IProject } from 'interface/data.inteface'
 import './index.css'
 
 
